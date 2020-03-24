@@ -1,3 +1,5 @@
+import "index.css"
+
 const placesListElement = document.querySelector('.places-list');
 const inputElements = document.querySelectorAll('.popup__input');
 const avatarImage = document.querySelector('.user-info__photo');
