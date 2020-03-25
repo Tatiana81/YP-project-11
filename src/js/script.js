@@ -1,5 +1,6 @@
 import "index.css"
 import { Api } from "Api.js"
+import { Card } from "Card.js"
 import { FormValidator } from "FormValidator.js"
 import { CardList } from "CardList.js"
 import { Popup } from "Popup.js"
