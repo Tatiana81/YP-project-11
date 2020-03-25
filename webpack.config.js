@@ -24,14 +24,22 @@ module.exports = {
             },
             // пример настройки плагина image-webpack-loader
             {
-                test: /\.(png|jpg|gif|ico|svg)$/,
+                /*test: /\.(png|jpg|gif|ico|svg)$/,
                 use: [
                     'file-loader?name=../images/[name].[ext]', // указали папку, куда складывать изображения
                     {
                         loader: 'image-webpack-loader',
-                        options: { esModule: false }
+                        options: {esModule:false}
                     },
                 ]
+            }*/
+
+                test: /\.(png|jpe?g|gif|svg|ico)$/i,
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]',
+                    outputPath: 'images',
+                },
             },
             {
                 test: /\.(eot|ttf|woff|woff2)$/,
