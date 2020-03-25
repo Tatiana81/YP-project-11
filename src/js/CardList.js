@@ -1,4 +1,4 @@
-class CardList {
+export class CardList {
     constructor(element) {
         this.element = element;
         // Надо исправить : Нельзя вызывать или создавать реализацию в конструторе класса

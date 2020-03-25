@@ -1,4 +1,4 @@
-class FormValidator {
+export class FormValidator {
     checkInputValidity(element, validity) {
         let error = element.nextElementSibling;
         let button = element.parentNode.querySelector('.popup__button');
