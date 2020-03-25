@@ -1,4 +1,4 @@
-class Popup {
+export class Popup {
     open(element) {
         element.classList.add('popup_is-opened');
         if (element.id === 'editProfilePopup') {
