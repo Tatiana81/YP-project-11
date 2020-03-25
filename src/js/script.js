@@ -1,4 +1,9 @@
 import "index.css"
+import "Api.js"
+import "FormValidator.js"
+import "CardList.js"
+import "Popup.js"
+import "UserInfo.js"
 
 const placesListElement = document.querySelector('.places-list');
 const inputElements = document.querySelectorAll('.popup__input');
