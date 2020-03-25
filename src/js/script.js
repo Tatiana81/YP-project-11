@@ -25,12 +25,7 @@ let initialCards = [];
 const inputVals = new FormValidator();
 const popupWindow = new Popup();
 const cardList = new CardList(placesListElement);
-/* 
- * (исправлено) Надо исправить: Код разбит на разные файлы, но в отдельных файлах
- * глобальные переменные должны быть скрыты (обернуты в IIFE или просто функцию)
- * Объявлять новые переменные или инициализировать классы лучше в одном из файлов
- * как пример, создайте для этого index.js или script.js
- */
+
 const errors = {
     "tooShort": "Должно быть от 2 до 30 символов",
     "tooLong": "Должно быть от 2 до 30 символов",
@@ -127,9 +122,3 @@ avatarEditForm.addEventListener('submit', function(event) {
     avatarImage.style.backgroundImage = `url("${avatarEditForm.elements.linkAvatar.value}")`;
     popupWindow.close(event.target);
 });
-
-
-
-// Надо исправить: инициализируя и объявляя класс внутри другого класса вы создаёте жесткую связь между классами
-// Если проект будет достаточно большим и сложным, то замена одного класса  прописанного внутри другого класса может быть очень болезненной,
-//});
