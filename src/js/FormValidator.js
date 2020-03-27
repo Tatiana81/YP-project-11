@@ -1,3 +1,5 @@
+import { errors, formStat } from "script.js"
+
 export class FormValidator {
     checkInputValidity(element, validity) {
         let error = element.nextElementSibling;

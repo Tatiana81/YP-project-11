@@ -1,31 +1,22 @@
-import "index.css"
-import { Api } from "Api.js"
-import { Card } from "Card.js"
-import { FormValidator } from "FormValidator.js"
-
-import { Popup } from "Popup.js"
-import { CardList } from "CardList.js"
-import { UserInfo } from "UserInfo.js"
-
-const placesListElement = document.querySelector('.places-list');
-const inputElements = document.querySelectorAll('.popup__input');
-const avatarImage = document.querySelector('.user-info__photo');
-const bigImage = document.querySelector('#imagePopup');
-const addCardElement = document.querySelector('#newPlacePopup');
-const editElement = document.querySelector('#editProfilePopup');
-const avatarEditElement = document.querySelector('#avatarPopup');
-const buttonAdd = document.querySelector('.user-info__button');
-const buttonEdit = document.querySelector('.user-info__button_edit');
-const avatarEdit = document.querySelector('.user-info__photo');
-const closeButtons = document.querySelectorAll('.popup__close');
+export const placesListElement = document.querySelector('.places-list');
+export const inputElements = document.querySelectorAll('.popup__input');
+export const avatarImage = document.querySelector('.user-info__photo');
+export const bigImage = document.querySelector('#imagePopup');
+export const addCardElement = document.querySelector('#newPlacePopup');
+export const editElement = document.querySelector('#editProfilePopup');
+export const avatarEditElement = document.querySelector('#avatarPopup');
+export const buttonAdd = document.querySelector('.user-info__button');
+export const buttonEdit = document.querySelector('.user-info__button_edit');
+export const avatarEdit = document.querySelector('.user-info__photo');
+export const closeButtons = document.querySelectorAll('.popup__close');
 export const newCardForm = document.forms.new;
 export const editProfileForm = document.forms.edit;
-const avatarEditForm = document.forms.newAvatar;
-let cardsInstances = [];
-let initialCards = [];
-const inputVals = new FormValidator();
-const popupWindow = new Popup();
-const cardList = new CardList(placesListElement);
+export const avatarEditForm = document.forms.newAvatar;
+export let cardsInstances = [];
+export let initialCards = [];
+export const inputVals = new FormValidator();
+export const popupWindow = new Popup();
+export const cardList = new CardList(placesListElement);
 
 export const errors = {
     "tooShort": "Должно быть от 2 до 30 символов",
@@ -41,16 +32,16 @@ export const formStat = { // дополнительная переменная �
     "linkAvatar": false
 };
 
-const api = new Api({
+export const api = new Api({
     baseUrl: 'https://praktikum.tk/cohort8',
     headers: {
         authorization: 'bc0f77dc-1dcd-480d-adad-4b989ce5b233',
         'Content-Type': 'application/json'
     }
 });
-const userInfo = new UserInfo(api);
+export const userInfo = new UserInfo(api);
 
-async function setNameInfo() {
+export async function setNameInfo() {
     let resultUserInfo = await api.userInfoSet();
     document.querySelector('.user-info__name').textContent = resultUserInfo.name;
     document.querySelector('.user-info__job').textContent = resultUserInfo.about;
@@ -59,7 +50,7 @@ async function setNameInfo() {
 
 setNameInfo();
 
-async function initCards() {
+export async function initCards() {
     let res = await api.getInitialCards();
     for (let card of res) {
         let newCard = new Card(api, card['name'], card['link'], card['likes'].length,
