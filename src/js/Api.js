@@ -1,3 +1,5 @@
+import { editProfileForm, newCardForm } from "script.js"
+
 export class Api {
     constructor(options) {
         this.baseUrl = options.baseUrl;
