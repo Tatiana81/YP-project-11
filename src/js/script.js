@@ -2,7 +2,6 @@ import "index.css"
 import { Api } from "Api.js"
 import { Card } from "Card.js"
 import { FormValidator } from "FormValidator.js"
-
 import { Popup } from "Popup.js"
 import { CardList } from "CardList.js"
 import { UserInfo } from "UserInfo.js"
@@ -33,7 +32,7 @@ export const errors = {
     "requiredValue": "Это обязательное поле",
     "linkRequired": "Здесь должна быть ссылка"
 };
-export const formStat = { // дополнительная переменная для контроля состояния полей ввода и управления кнопками форм
+export const formStat = {
     "name": false,
     "place": false,
     "link": false,
