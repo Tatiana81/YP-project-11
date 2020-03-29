@@ -40,8 +40,12 @@ export const formStat = {
     "linkAvatar": false
 };
 
+let bUrl = ''
+
+if (process.env.NODE_ENV === 'development') { bUrl = 'https://praktikum.tk/cohort8' } else { bUrl = 'http://praktikum.tk/cohort8' }
+
 const api = new Api({
-    baseUrl: 'https://praktikum.tk/cohort8',
+    baseUrl: bUrl,
     headers: {
         authorization: 'bc0f77dc-1dcd-480d-adad-4b989ce5b233',
         'Content-Type': 'application/json'
