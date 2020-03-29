@@ -18,7 +18,7 @@ module.exports = {
                 use: {
                     loader: "babel-loader"
                 },
-                exclude: /node_modules/
+                exclude: [/node_modules/, /^\.DS\.Store$/]
             },
             {
                 test: /\.css$/i, // применять это правило только к CSS-файлам
