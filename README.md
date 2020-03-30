@@ -13,4 +13,5 @@
 Производим настройку в соответствии с заданием 3.1 Настраиваем сборки build, dev, deploy 3.2 Включаем формирование имен файлов, включая хэш-код 3.3 Исправляем относительные пути в файлах css 3.4 В файле script.js подключаем стили 3.5 Настраиваем правила обработки javascript, css, файлов изображений и шрифтов
 Версии установленных модулей: @babel/cli: 7.8.4, @babel/core: 7.9.0, @babel/preset-env: 7.9.0, babel-loader: 8.1.0, css-loader: 3.4.2, exports-loader: 0.7.0, file-loader: 6.0.0, gh-pages: 2.2.0, html-webpack-plugin: 3.2.0, image-webpack-loader: 6.0.0, imports-loader": 0.8.0, mini-css-extract-plugin: 0.9.0, optimize-css-assets-webpack-plugin: 5.0.3, postcss-import": 12.0.1, postcss-loader": 3.0.0, postcss-preset-env: 6.7.0, style-loader: 1.1.3, svg-inline-loader: 0.8.2, webpack: 4.42.0, webpack-cli: 3.3.11, webpack-dev-server: 3.10.3, webpack-md5-hash: 0.0.6
 
+
 Автор: Суроева Татьяна
