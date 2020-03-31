@@ -42,7 +42,7 @@ export const formStat = {
 
 let bUrl = ''
 
-if (NODE_ENV === 'development') { bUrl = 'https://praktikum.tk/cohort8' } else { bUrl = 'http://praktikum.tk/cohort8' }
+if (NODE_ENV === 'development') { bUrl = 'http://praktikum.tk/cohort8' } else { bUrl = 'https://praktikum.tk/cohort8' }
 
 const api = new Api({
     baseUrl: bUrl,
