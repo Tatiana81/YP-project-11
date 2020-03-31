@@ -331,5 +331,8 @@ webpack-cli: 3.3.11,
 webpack-dev-server: 3.10.3, 
 webpack-md5-hash: 0.0.6
 
+Версия: 1.0.0
+
+Ссылка на адрес страницы: https://tatiana81.github.io/YP-project-11/
 
 Автор: Суроева Татьяна
