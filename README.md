@@ -78,7 +78,7 @@
     webpack-dev-server: 3.10.3, 
     webpack-md5-hash: 0.0.6
 
-#### Версия: 1.0.0
+#### Версия: 1.0.1
 
 ### Ссылка на адрес страницы: https://tatiana81.github.io/YP-project-11/
 
